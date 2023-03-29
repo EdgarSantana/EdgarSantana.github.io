@@ -37,17 +37,17 @@ a.btn-primary{
 }
 
 a.btn-info{
-    color: #000
+    color: #000;
 }
 
 a.btn-danger{
-    color: #000
+    color: #000;
 }
 
 .btn-danger{
     background: #fff;
     color: #000;
-    border-radius: 3px
+    border-radius: 3px;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -56,22 +56,22 @@ a.btn-danger{
 .open .dropdown-toggle.btn-primary {
     background: #a04020;
     border: 1px solid #a04020;
-    box-shadow : -3px 5px 19px 0px rgba(0,0,0,0.55)
+    box-shadow : -3px 5px 19px 0px rgba(0,0,0,0.55);
 }
 
 a.btn-success,
 a.btn-primary,
 a.btn-warning,
 a.btn-danger {
-    color: #000
+    color: #000;
     
     
 }
 
 .btn-success {
-    background: #fff;
+    background: #0ed180;
     border: 1px solid #159d82;
-    color: #000
+    color: #000000;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -80,8 +80,8 @@ a.btn-danger {
 .open .dropdown-toggle.btn-success {
     
     background: #159d82;
-    box-shadow : -3px 5px 19px 0px rgba(0,0,0,0.55)
-
+    box-shadow : -3px 5px 19px 0px rgba(0,0,0,0.55);
+    color: #000
 }
 /* colors  
 

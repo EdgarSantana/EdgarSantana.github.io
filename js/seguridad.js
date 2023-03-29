@@ -25,33 +25,6 @@ export async function iniciaSesión()
   await getAuth().signInWithRedirect(provider);
 }
 
-/** @param {import(
-    "../lib/tiposFire.js").User}
-    usuario
- * @param {string[]} roles
- * @returns {Promise<boolean>} */
-export async function tieneRol(usuario, roles) 
-{
-    if (usuario && usuario.email) 
-    {
-        const rolIds = await cargaRoles(usuario.email);
-        for (const rol of roles) 
-        {
-            if (rolIds.has(rol)) 
-            {
-                return true;
-            }
-        }
-        alert("No autorizado.");
-        location.href = "index.html";
-    } 
-    else 
-    {
-        iniciaSesión();
-    }
-    return false;
-}
-
 export async function terminaSesión() 
 {
   try {
@@ -61,23 +34,3 @@ export async function terminaSesión()
   }
 }
 
-/** @param {string} email
- * @returns {Promise<Set<string>>}
- */
-export async function cargaRoles(email) 
-{
-  let doc = await daoUsuario.doc(email).get();
-  if (doc.exists) 
-  {
-    /**
-     * @type {
-        import("./tipos.js").
-        Usuario} */
-    const data = doc.data();
-    return new Set(data.Rol || []);
-  } 
-  else 
-  {
-    return new Set();
-  }
-}

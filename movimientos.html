@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="img/favicon_w.png" />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.gif" />
         <title>Sucursal</title>
         <!-- FIREBASE BIBLIOTECAS -->
         <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
@@ -20,10 +20,12 @@
         <link rel="stylesheet" href="assets/css/owl.css" />
         <link rel="stylesheet" href="assets/css/lightbox.css" />
         <!-- Personal CSS Files -->
+        <link href="css/personal.css" rel="stylesheet" />
+        <!-- Personal JS Files -->
         <script type="module" src="templates/mi-nav.js"></script>
         <script type="module" src="templates/mi-footer.js"></script>
         <script type="module" src="templates/mi-progreso.js"></script>
-        <link href="css/personal.css" rel="stylesheet" />
+        <script type="module" src="templates/mi-social.js"></script>
 
     </head>
     <body>
@@ -50,21 +52,7 @@
                           <mi-nav></mi-nav>  
                       </nav>
                       <div class="social-network">
-                            <ul class="soial-icons">
-                                <li>
-                                  <a href="https://www.facebook.com/garedmx"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                  <a href="https://twitter.com/gared_mx"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                  <a href="https://www.linkedin.com/in/edgar-francisco-santana-murillo-54b71a84/"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                          <br>
-                            <div class="white-button">
-                                <button type="button" name="terminarSesión"> Terminar Sesión </button>
-                            </div>
+                        <mi-social></mi-social> 
                       </div>
 
                       <div class="copyright-text">
@@ -78,24 +66,30 @@
                 <section class="section about-me" data-section="section1">
                     <div class="container">
                         <div class="top-header">
-                                <img src="assets/images/aerobic-girls.jpg" alt="aerobic girls" />
+                          <img src="assets/images/header.jpg" alt="header" />
                         </div>
                         <div class="section-heading">
 
-                            <h2>SUCURSAL</h2>
+                            <h2>MOVIMIENTOS</h2>
                             <div class="line-dec"></div>
-                            <a class="btn btn-success" href="sucursal_alta.html"> Agregar.. </a>
+                            <a class="btn btn-info" href="bancos.html"> Regresar.. </a>
                         </div>
                         <div class="right-image-post">
                             <div class="row">
+                              <div class="col-md-6"><img class="rounded float-left" style="max-height: 20px; max-width:20px; cursor:pointer;" src="assets/images/prev.png" alt="prev" id="pagless" /></div>
+                              <div class="col-md-6"><img class="rounded float-right" style="max-height: 20px; max-width:20px; cursor:pointer;" src="assets/images/next.png" alt="next" id="pagplus" /></div>
                               <div class="col-md-12">
-                                  <table class="table">
+                                  <table class="table table-striped table-responsive">
                                       <thead class="thead-dark">
                                             <tr>
-                                                <th>Foto</th>
+                                                <th>ID</th>
                                                 <th>Nombre</th>
-                                                <th>Direccion</th>
-                                                <th>Accion</th>
+                                                <th>Tipo</th>
+                                                <th>Agencia</th>
+                                                <th>Numero</th>
+                                                <th>Balance</th>
+                                                <th>Categoria</th>
+                                                <th>Moneda</th>
                                             </tr>
                                       </thead>
                                       <tbody id="lista">
@@ -110,6 +104,6 @@
             </div>
         </form>
     <script type="module" src="js/Controllers/Sesion.js"></script>    
-    <script type="module" src="js/Controllers/Sucursales.js"></script>
+    <script type="module" src="js/Controllers/Movimientos.js"></script>
     </body>
 </html>

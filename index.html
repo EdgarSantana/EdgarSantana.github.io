@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="img/favicon_w.png" />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.gif" />
         <title>Inicio</title>
         <!-- FIREBASE BIBLIOTECAS -->
         <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
@@ -19,10 +19,12 @@
         <link rel="stylesheet" href="assets/css/owl.css" />
         <link rel="stylesheet" href="assets/css/lightbox.css" />
         <!-- Personal CSS Files -->
+        <link href="css/personal.css" rel="stylesheet" />
+        <!-- Personal JS Files -->
         <script type="module" src="templates/mi-nav.js"></script>
         <script type="module" src="templates/mi-footer.js"></script>
         <script type="module" src="templates/mi-progreso.js"></script>
-        <link href="css/personal.css" rel="stylesheet" />
+        <script type="module" src="templates/mi-social.js"></script>
     </head>
     <body>
         <form name="forma">
@@ -48,21 +50,7 @@
                           <mi-nav></mi-nav>  
                       </nav>
                       <div class="social-network">
-                            <ul class="soial-icons">
-                                <li>
-                                  <a href="https://www.facebook.com/garedmx"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                  <a href="https://twitter.com/gared_mx"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                  <a href="https://www.linkedin.com/in/edgar-francisco-santana-murillo-54b71a84/"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                          <br>
-                            <div class="white-button">
-                                <button type="button" name="terminarSesión"> Terminar Sesión </button>
-                            </div>
+                          <mi-social></mi-social> 
                       </div>
 
                       <div class="copyright-text">
@@ -76,36 +64,33 @@
                 <section class="section about-me" data-section="section1">
                     <div class="container">
                         <div class="top-header">
-                                <img src="assets/images/aerobic-girls.jpg" alt="aerobic girls" />
+                                <img src="assets/images/header.jpg" alt="header" />
                         </div>
                         <div class="section-heading">
 
                           <h2>INICIO</h2>
                           <div class="line-dec"></div>
-                          <span>OptiSoft es un sistema creado como proyecto final para la secuencia 3NV41, <b><i>este proyecto es solo un prototipo y algunas funciones no estan habiliatdas</i></b>.</span>
+                          <span>
+                              <p>Sistema destinado a la Consulta de Bancos y Movimientos por medio de la API de Belvo, usando su ambiente SANDBOX.</p>
+                              <p>Se realiza este proyecto para cumplir con los requerimientos solicitados en el proceso de contratación (examen practico) para la empresa AMMPER</p>
+                          </span>
                         </div>
                         <div class="right-image-post">
                             <div class="row">
 
                               <div class="col-md-8">
                                 <div class="left-text">
-                                  <h4>Firebase</h4>
-                                  <p>Firebase es una herramienta priporcionada por Google para el consumo de Servicios, este proyecto usa alguinos de dichos servicios.</p>
-                                  <p>Para este proyecto se usa:
-                                    
-                                        <li>Autentificación</li>
-                                        <li>Base de Datos</li>
-                                        <li>Almacenamiento</li>
-                                    
-                                  </p>
+                                  <h4>BELVO</h4>
+                                  <p>The easiest way to access financial data and move money in Latin America.</p>
+                                  <p>Access and enrich financial data from a multitude of sources as well as initiate payments with just a few lines of code.</p>
                                   <div class="white-button">
-                                    <a href="https://firebase.google.com/">Leer Mas..</a>
+                                    <a href="https://developers.belvo.com/">Leer Mas..</a>
                                   </div>
                                 </div>
                               </div>
                               <div class="col-md-4">
                                 <div class="right-image">
-                                  <img src="assets/images/mountain-reflection.png" alt="firebase" />
+                                  <img src="assets/images/belvo.png" alt="belvo" />
                                 </div>
                               </div>
 

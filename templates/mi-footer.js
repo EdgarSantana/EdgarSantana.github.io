@@ -3,9 +3,9 @@ class MiFooter
   connectedCallback() {
     this.innerHTML = /* html */
         `<p>
-            Copyright 2020 Edgar Francisco Santana Murillo<br>
-            Secuencia: 3NV41<br>
-            Boleta: 2006030893
+            Edgar Francisco Santana Murillo<br>
+            Copyright 2023<br> 
+            AMMPER - Test<br>
         </p>`;
     }
 }
