@@ -1,0 +1,42 @@
+{
+    "name": "AMMPER-TEST",
+    "short_name": "TEST",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "assets/images/favicon.gif",
+            "type": "image/gif",
+            "sizes": "190x43"
+        },
+        {
+            "src": "assets/images/header.jpg",
+            "type": "image/jpeg",
+            "sizes": "868x400"
+        },
+        {
+            "src": "assets/images/belvo.png",
+            "type": "image/png",
+            "sizes": "225x225"
+        },
+        {
+            "src": "assets/images/GitHub-Logo.png",
+            "type": "image/png",
+            "sizes": "3840x2160"
+        },
+        {
+            "src": "assets/images/next.png",
+            "type": "image/png",
+            "sizes": "50x45"
+        },
+        {
+            "src": "assets/images/prev.png",
+            "type": "image/png",
+            "sizes": "50x45"
+        }
+    ]
+}
